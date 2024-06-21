@@ -1,0 +1,58 @@
+@media print{
+    *{
+        font-family:'Courier New', Courier, monospace;
+    }
+    body{
+        background: url('../imagens/back-print.jpg') no-repeat;
+    }
+    main{
+        border: 2px solid #000;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    #print{display: block;}
+    #phone{ display: none;}
+    #tablet{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background: url('../imagens/back-tablet.jpg');
+        background-size: cover;
+    }
+    #print{display: none;}
+    #phone{ display: none;}
+    #tablet{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px){
+    body{
+        background: url('../imagens/back-pc.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    #print{display: none;}
+    #phone{ display: none;}
+    #tablet{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1400px) {
+    body{
+        background: url('../imagens/back-tv.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    #print{display: none;}
+    #phone{ display: none;}
+    #tablet{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}
